@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#6d55a3">
+  <meta name="description" content="Véhicules, maisons, iPhone et services à Kinshasa. Faites votre recherche et échangez avec TrustKin en toute confiance.">
+  <title>TrustKin — Trouvez en toute confiance</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="#accueil" aria-label="TrustKin, accueil">
+      <img src="logo/logo trust de base.jpeg" alt="TrustKin">
+    </a>
+    <button class="menu-toggle" aria-label="Ouvrir le menu" aria-expanded="false"><span></span><span></span></button>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#vehicules">Véhicules</a>
+      <a href="#immobilier">Immobilier</a>
+      <a href="#iphone-services">iPhone & services</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="button button-gold header-cta" data-whatsapp href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20produit%20%3F" target="_blank" rel="noopener noreferrer">WhatsApp <span aria-hidden="true">↗</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <div class="hero-visual" role="img" aria-label="Illustration TrustKin réunissant voiture, maison et téléphone"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-dot"></span> LE BON CHOIX, À KINSHASA</p>
+        <h1>La confiance<br>ouvre les bonnes portes.</h1>
+        <p class="hero-lede">Véhicules, maisons, iPhone : en toute confiance.</p>
+        <form class="search-bar" id="hero-search">
+          <label class="search-category"><span>Je recherche</span>
+            <select id="quick-category" aria-label="Catégorie">
+              <option value="all">Tout voir</option><option value="vehicules">Un véhicule</option><option value="immobilier">Un logement</option><option value="iphone">Un iPhone</option>
+            </select>
+          </label>
+          <label class="search-keyword"><span>Votre recherche</span><input id="quick-keyword" type="search" placeholder="Ex. Toyota, appartement..." autocomplete="off"></label>
+          <button class="search-submit" type="submit" aria-label="Rechercher">⌕</button>
+        </form>
+        <div class="hero-actions"><a class="button button-navy" href="#vehicules">Explorer les véhicules <span>↗</span></a><a class="text-link" href="#immobilier">Voir les logements <span>→</span></a></div>
+        <div class="hero-proof"><span class="proof-mark">✓</span><span>Une équipe entre vous et le vendeur.<br><strong>Chaque demande passe par TrustKin.</strong></span></div>
+      </div>
+      <div class="hero-stamp"><span>UNE AUTRE FAÇON</span><strong>DE TROUVER.</strong><i></i><span>KINSHASA · RDC</span></div>
+    </section>
+
+    <section class="trust-strip" aria-label="Engagement TrustKin">
+      <span>Une mise en relation accompagnée</span><i></i><span>Des informations claires</span><i></i><span>Votre interlocuteur : TrustKin</span>
+    </section>
+
+    <section class="section categories-section" id="explorer">
+      <div class="section-heading"><div><p class="eyebrow">TROUVEZ VOTRE PROCHAIN PROJET</p><h2>Tout commence ici.</h2></div><span class="heading-note">Trois univers, un même interlocuteur.</span></div>
+      <div class="category-grid">
+        <a class="category-card category-car" href="#vehicules"><span class="category-index">01 / BOUGER</span><div class="category-art car-art"><span class="art-sun"></span><span class="road"></span><span class="car-shape"><i></i><b></b></span></div><div class="category-info"><h3>Véhicules</h3><p>La route vers votre prochain véhicule commence ici.</p><span class="round-arrow">↗</span></div></a>
+        <a class="category-card category-home" href="#immobilier"><span class="category-index">02 / S'INSTALLER</span><div class="category-art home-art"><img src="logo/logo pour le services de maisons.jpeg" alt="Illustration maison"></div><div class="category-info"><h3>Immobilier</h3><p>Un espace à vous, à louer ou à acheter.</p><span class="round-arrow">↗</span></div></a>
+        <a class="category-card category-phone" href="#iphone-services"><span class="category-index">03 / S'ÉQUIPER</span><div class="category-art phone-art"><img src="logo/service de ventes de telephone.jpeg" alt="Illustration téléphone"></div><div class="category-info"><h3>iPhone & services</h3><p>Les bons produits et les bons professionnels.</p><span class="round-arrow">↗</span></div></a>
+      </div>
+    </section>
+
+    <section class="brand-section" id="vehicules">
+      <div class="section brand-inner"><div class="section-heading brand-heading"><div><p class="eyebrow">VOTRE MARQUE, VOTRE ROUTE</p><h2>En route vers la bonne.</h2></div><button class="quiet-button" id="all-brands">Toutes les marques <span>↗</span></button></div>
+        <div class="brand-tools"><div class="brand-filter"><button class="filter-chip active" data-condition="all">Tout</button><button class="filter-chip" data-condition="new">Neuf</button><button class="filter-chip" data-condition="used">Occasion</button></div><label class="brand-search"><span>⌕</span><input id="brand-search" type="search" placeholder="Rechercher une marque"></label></div>
+        <div class="brand-grid" id="brand-grid"></div>
+      </div>
+    </section>
+
+    <section class="section listings-section" id="annonces">
+      <div class="section-heading"><div><p class="eyebrow">À DÉCOUVRIR</p><h2>Des trouvailles à venir.</h2></div><p class="heading-note">Les annonces seront publiées après vérification de leurs informations et de leurs photos.</p></div>
+      <div class="listing-state" id="listing-state"><div class="empty-symbol">+</div><div><h3>Le catalogue se prépare.</h3><p>Aucune annonce réelle n'a encore été fournie. Nous préférons attendre les vraies photos plutôt que d'afficher des exemples comme s'il s'agissait de biens disponibles.</p><a class="text-link" href="#publier">Proposer une annonce <span>→</span></a></div></div>
+      <div class="listing-grid" id="listing-grid" hidden></div>
+    </section>
+
+    <section class="property-section" id="immobilier"><div class="section property-inner"><div class="section-heading"><div><p class="eyebrow">IMMOBILIER À KINSHASA</p><h2>Votre prochain chez-vous.</h2></div><span class="heading-note">Location ou vente, le bon espace commence par une bonne recherche.</span></div>
+      <div class="property-controls"><div class="property-tabs" role="group" aria-label="Type de recherche immobilière"><button class="property-tab active" data-property="location">Location</button><button class="property-tab" data-property="vente">Vente</button></div><label><span>Commune</span><select aria-label="Commune"><option>Toutes les communes</option><option>Gombe</option><option>Lingwala</option><option>Ngaliema</option><option>Limete</option><option>Mont-Ngafula</option><option>Lemba</option><option>Autre commune</option></select></label><label><span>Type de bien</span><select aria-label="Type de bien"><option>Tous les types</option><option>Maison</option><option>Appartement</option><option>Studio</option><option>Parcelle</option></select></label><label><span>Chambres</span><select aria-label="Nombre de chambres"><option>Indifférent</option><option>1 chambre ou plus</option><option>2 chambres ou plus</option><option>3 chambres ou plus</option></select></label><label class="budget-field"><span>Budget maximum (USD)</span><input type="number" min="0" placeholder="Ex. 1 000"></label></div>
+      <div class="empty-catalog"><span class="empty-catalog-mark">⌂</span><div><span class="service-tag">CATALOGUE IMMOBILIER</span><h3>Les prochaines visites se préparent.</h3><p>Aucun logement avec photos et informations vérifiées n'est encore publié. Écrivez à TrustKin pour décrire votre recherche.</p></div><a class="text-link" href="#contact">Décrire ma recherche <span>→</span></a></div>
+    </div></section>
+
+    <section class="how-section">
+      <div class="section how-inner"><div class="how-intro"><p class="eyebrow">SIMPLE, DU PREMIER CLIC À LA VISITE</p><h2>À chaque étape,<br>on est là.</h2><p>Vous gardez le contrôle. TrustKin facilite le contact et accompagne votre demande.</p><a class="button button-light" href="#contact">Parler à notre équipe <span>↗</span></a></div>
+        <div class="steps"><article class="step"><span class="step-no">01</span><div><h3>Vous choisissez.</h3><p>Repérez l'annonce ou le service qui vous intéresse.</p></div><span class="step-arrow">↗</span></article><article class="step"><span class="step-no">02</span><div><h3>Vous contactez TrustKin.</h3><p>Votre demande arrive d'abord auprès de notre équipe.</p></div><span class="step-arrow">↗</span></article><article class="step"><span class="step-no">03</span><div><h3>On vous met en relation.</h3><p>Nous organisons la suite avec le vendeur ou le prestataire.</p></div><span class="step-arrow">↗</span></article></div>
+      </div>
+    </section>
+
+    <section class="section assurance-section">
+      <div class="assurance-top"><div><p class="eyebrow">LA CONFIANCE N'EST PAS UN DÉTAIL</p><h2>Une relation plus claire,<br>dès le premier message.</h2></div><p>TrustKin est votre point de contact. Nous ne publions pas de statistiques ni d'avis tant que nous n'avons pas de données vérifiées à partager.</p></div>
+      <div class="assurance-grid"><article><span class="assurance-icon">01</span><h3>Informations vérifiées</h3><p>Les annonces sont examinées avant leur mise en ligne.</p></article><article><span class="assurance-icon">02</span><h3>Contact centralisé</h3><p>Vous échangez avec TrustKin avant la mise en relation.</p></article><article><span class="assurance-icon">03</span><h3>Prix sans surprise</h3><p>Le prix et ses conditions sont affichés clairement.</p></article><article><span class="assurance-icon">04</span><h3>Un suivi humain</h3><p>Une équipe vous accompagne pour la suite de votre demande.</p></article></div>
+    </section>
+
+    <section class="services-section" id="iphone-services"><div class="section services-inner"><div class="section-heading"><div><p class="eyebrow">BIEN PLUS QU'UNE ANNONCE</p><h2>Les bons services,<br>près de chez vous.</h2></div><span class="heading-note">Des professionnels à découvrir et à rencontrer.</span></div>
+      <div class="apple-catalog"><div class="apple-heading"><div><span class="service-tag">TECHNOLOGIE · PRODUITS APPLE</span><h3>iPhone à découvrir.</h3></div><div class="apple-filters"><label>État<select aria-label="État de l'iPhone"><option>Tous les états</option><option>Neuf</option><option>Occasion</option></select></label><label>Stockage<select aria-label="Stockage"><option>Tous les stockages</option><option>64 Go</option><option>128 Go</option><option>256 Go</option><option>512 Go</option></select></label></div></div><div class="apple-empty"><div class="apple-icon"></div><div><strong>Aucune disponibilité publiée pour le moment.</strong><p>Les modèles, capacités et états seront affichés après confirmation du stock et des photos.</p></div><a class="text-link" href="#contact">Demander une disponibilité <span>→</span></a></div></div>
+      <div class="service-grid"><article class="service-card paint-service"><div class="service-art"><img src="logo/service de peinture.jpeg" alt="Illustration d'un service de peinture"></div><div class="service-details"><span class="service-tag">MAISON & TRAVAUX</span><h3>Peinture en bâtiment</h3><p>Donnez une nouvelle couleur à vos espaces.</p><a class="text-link" data-whatsapp data-whatsapp-message="Bonjour, puis-je en savoir plus sur le service de peinture ?" href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20service%20de%20peinture%20%3F" target="_blank" rel="noopener noreferrer">Demander un devis <span>→</span></a></div></article><article class="service-card glass-service"><div class="service-art"><div class="glass-graphic"><span></span><span></span><span></span></div></div><div class="service-details"><span class="service-tag">MAISON & TRAVAUX</span><h3>Pose de vitres</h3><p>Un projet de vitrage ? Parlons-en ensemble.</p><a class="text-link" data-whatsapp data-whatsapp-message="Bonjour, puis-je en savoir plus sur le service de pose de vitres ?" href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20service%20de%20pose%20de%20vitres%20%3F" target="_blank" rel="noopener noreferrer">Demander un devis <span>→</span></a></div></article><article class="service-card iphone-service"><div class="service-art"><div class="phone-graphic"><i></i><b></b></div><span class="art-label">APPLE<br>À DÉCOUVRIR</span></div><div class="service-details"><span class="service-tag">TECHNOLOGIE</span><h3>iPhone & produits Apple</h3><p>Consultez les disponibilités auprès de TrustKin.</p><a class="text-link" data-whatsapp data-whatsapp-message="Bonjour, puis-je en savoir plus sur les produits Apple disponibles ?" href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20les%20produits%20Apple%20disponibles%20%3F" target="_blank" rel="noopener noreferrer">Voir les disponibilités <span>→</span></a></div></article></div>
+    </div></section>
+
+    <section class="publish-section" id="publier"><div class="section publish-inner"><div><p class="eyebrow">VOUS AVEZ UN BIEN À PROPOSER ?</p><h2>Il mérite d'être<br>vu par les bonnes personnes.</h2><p>Présentez votre véhicule, votre logement ou votre service. Notre équipe vous recontactera pour vérifier les informations avant publication.</p><a class="button button-navy" href="#contact">Proposer mon annonce <span>↗</span></a></div><div class="publish-aside"><span class="publish-number">TK / 01</span><p>Publication accompagnée<br>et mise en relation par TrustKin.</p><span class="publish-line"></span><span class="publish-location">KINSHASA, RDC</span></div></div></section>
+
+    <section class="section contact-section" id="contact"><div class="contact-intro"><p class="eyebrow">UN PROJET EN TÊTE ?</p><h2>Commençons<br>par en parler.</h2><p>Écrivez-nous. Votre demande sera adressée à TrustKin, jamais directement au vendeur.</p><div class="contact-meta"><span>WHATSAPP TRUSTKIN</span><strong id="contact-number">+243 854 541 549</strong></div><a data-whatsapp class="button button-navy contact-whatsapp" href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20produit%20%3F" target="_blank" rel="noopener noreferrer">Écrire sur WhatsApp <span>↗</span></a></div>
+      <form class="contact-form" id="contact-form"><div class="form-heading"><span>01 — NOUS ÉCRIRE</span><span class="form-required">* Champs obligatoires</span></div><label>Votre nom *<input name="name" required placeholder="Comment vous appeler ?"></label><label>Votre numéro de téléphone *<input name="phone" type="tel" required placeholder="+243 ..."></label><label>Votre demande<select name="subject"><option>Je cherche un véhicule</option><option>Je cherche un logement</option><option>Je cherche un iPhone</option><option>Je souhaite proposer un bien</option><option>Je souhaite un devis de service</option><option>Autre demande</option></select></label><label>Votre message<textarea name="message" rows="3" placeholder="Dites-nous ce que vous recherchez..."></textarea></label><button class="button button-navy" type="submit">Envoyer à TrustKin <span>↗</span></button><p class="form-note" id="form-note">Le formulaire ouvre WhatsApp avec votre demande préremplie.</p></form>
+    </section>
+  </main>
+
+  <footer class="site-footer"><div class="footer-main"><a class="footer-logo" href="#accueil"><img src="logo/la banniere.jpeg" alt="TrustKin — Véhicules, maisons, iPhone"></a><p>Véhicules, maisons, iPhone :<br>en toute confiance.</p><div class="footer-links"><a href="#vehicules">Véhicules</a><a href="#immobilier">Immobilier</a><a href="#iphone-services">iPhone & services</a><a href="#publier">Proposer une annonce</a><a href="#contact">Contact</a></div><div class="footer-contact"><span>VOTRE INTERLOCUTEUR À KINSHASA</span><a data-whatsapp href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20produit%20%3F" target="_blank" rel="noopener noreferrer">Écrire à TrustKin ↗</a><div class="social-links" aria-label="Réseaux sociaux TrustKin"><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer" aria-label="Facebook">f</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer" aria-label="Instagram">ig</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer" aria-label="TikTok">♪</a></div><small class="social-note">Liens des profils officiels à personnaliser</small></div></div><div class="footer-bottom"><span>© <span id="year"></span> TRUSTKIN · KINSHASA, RDC</span><span>Les annonces seront affichées après vérification.</span><a href="#contact">Mentions légales · Politique de confidentialité</a></div></footer>
+
+  <nav class="mobile-dock" aria-label="Navigation mobile"><a href="#accueil" class="dock-active"><span>⌂</span>Accueil</a><a href="#vehicules"><span>◉</span>Véhicules</a><a href="#immobilier"><span>⌂</span>Logements</a><a href="#contact"><span>↗</span>Contact</a></nav>
+  <a class="whatsapp-float" data-whatsapp href="https://wa.me/243854541549?text=Bonjour%2C%20puis-je%20en%20savoir%20plus%20sur%20le%20produit%20%3F" target="_blank" rel="noopener noreferrer" aria-label="Contacter TrustKin sur WhatsApp"><span>↗</span><b>Parler à TrustKin</b></a>
+  <dialog class="detail-dialog" id="detail-dialog"><button class="dialog-close" aria-label="Fermer">×</button><div id="dialog-content"></div></dialog>
+  <script src="app.js"></script>
+</body>
+</html>
